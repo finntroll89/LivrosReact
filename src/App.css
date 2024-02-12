@@ -1,38 +1,51 @@
+/* Estilo global para o aplicativo */
 .App {
-  text-align: center;
+  text-align: center; /* Centraliza o texto */
 }
 
+/* Estilo para o logotipo do aplicativo */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* Define a altura do logotipo como 40% da altura da viewport */
+  pointer-events: none; /* Evita eventos do cursor no logotipo */
 }
 
+/* Estilo para a lista de autores */
+.autores-list {
+  list-style-type: disc; /* Define o tipo de marcador como disco */
+  padding-left: 20px; /* Adiciona um recuo à esquerda para os itens da lista */
+}
+
+/* Estilos condicionais com base nas preferências de redução de movimento */
 @media (prefers-reduced-motion: no-preference) {
+  /* Estilo para o logotipo com animação de rotação contínua */
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Estilo para o cabeçalho do aplicativo */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #282c34; /* Cor de fundo do cabeçalho */
+  min-height: 100vh; /* Altura mínima de 100% da altura da viewport */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  font-size: calc(10px + 2vmin); /* Tamanho da fonte responsivo */
+  color: white; /* Cor do texto */
 }
 
+/* Estilo para os links do aplicativo */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Cor do link */
 }
 
+/* Animação de rotação contínua para o logotipo do aplicativo */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Rotação inicial */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Rotação completa após 20 segundos */
   }
 }
